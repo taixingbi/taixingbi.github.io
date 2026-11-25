@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
+import { Source_Serif_4 } from "next/font/google";
 import { Nav } from "@/components/Nav";
 import { profile } from "@/content/profile";
 import "./globals.css";
+
+const serif = Source_Serif_4({ subsets: ["latin"], style: ["normal", "italic"], variable: "--font-serif" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://taixingbi.github.io"),
@@ -23,12 +26,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={serif.variable}>
       <body>
         <Nav />
         <main className="wrap">{children}</main>
         <footer className="wrap footer">
-          © {new Date().getFullYear()} {profile.name} · Last updated{" "}
+          © {new Date().getFullYear()} {profile.name}. Last updated{" "}
           {new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
         </footer>
       </body>

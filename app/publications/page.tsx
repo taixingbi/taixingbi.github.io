@@ -8,7 +8,7 @@ export default function Publications() {
   const years = [...new Set(publications.map((p) => p.year))].sort((a, b) => b - a);
   return (
     <>
-      <h1 className="page-title">publications</h1>
+      <h1 className="page-title">Publications</h1>
       {years.map((y) => (
         <section key={y}>
           <h2 className="year">{y}</h2>

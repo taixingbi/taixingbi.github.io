@@ -9,7 +9,7 @@ export default function CV() {
   return (
     <>
       <div className="cv-head">
-        <h1 className="page-title">cv</h1>
+        <h1 className="page-title">Curriculum Vitae</h1>
         {profile.cvPdf && (
           <a className="chip" href={profile.cvPdf}>
             Download PDF
@@ -19,7 +19,7 @@ export default function CV() {
       <p className="headline">{profile.headline}</p>
       <p>{summary}</p>
 
-      <h2>experience</h2>
+      <h2>Experience</h2>
       {experience.map((r) => (
         <div className="cv-role" key={r.org}>
           <div className="cv-row">
@@ -38,7 +38,7 @@ export default function CV() {
         </div>
       ))}
 
-      <h2>publications</h2>
+      <h2>Publications</h2>
       <ul>
         {publications.map((p) => (
           <li key={p.id}>
@@ -48,7 +48,7 @@ export default function CV() {
         ))}
       </ul>
 
-      <h2>education</h2>
+      <h2>Education</h2>
       {education.map((e) => (
         <div className="cv-row" key={e.school}>
           <div>
@@ -58,7 +58,7 @@ export default function CV() {
         </div>
       ))}
 
-      <h2>skills</h2>
+      <h2>Skills</h2>
       <dl className="skills">
         {skills.map((s) => (
           <div key={s.area}>

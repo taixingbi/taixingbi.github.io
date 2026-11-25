@@ -1,11 +1,11 @@
-import Link from "next/link";
 import { PublicationItem } from "@/components/PublicationItem";
+import { education, experience } from "@/content/cv";
 import { news } from "@/content/news";
 import { profile } from "@/content/profile";
 import { publications } from "@/content/publications";
 
-function formatDate(d: string) {
-  return new Date(d + "T12:00:00").toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
+function formatMonth(d: string) {
+  return new Date(d + "T12:00:00").toLocaleDateString("en-US", { year: "numeric", month: "short" });
 }
 
 export default function Home() {
@@ -13,88 +13,107 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <div>
+        <div className="hero-text">
           <h1>{profile.name}</h1>
-          <p className="headline">{profile.headline}</p>
-          <p className="muted">
-            {profile.affiliation} · {profile.location}
+          <p className="affil">
+            {profile.position}
+            <br />
+            {profile.department}
+            <br />
+            {profile.institution}
           </p>
-          <ul className="links">
-            {profile.links.map((l) => (
-              <li key={l.label}>
+          <p className="affil muted">Advisor: {profile.advisor}</p>
+          <p className="contact">
+            {profile.links.map((l, i) => (
+              <span key={l.label}>
+                {i > 0 && <span className="sep"> / </span>}
                 <a href={l.href} target={l.href.startsWith("mailto:") ? undefined : "_blank"} rel="noreferrer">
                   {l.label}
                 </a>
-              </li>
+              </span>
             ))}
             {profile.cvPdf && (
-              <li>
-                <a href={profile.cvPdf}>CV (PDF)</a>
-              </li>
+              <>
+                <span className="sep"> / </span>
+                <a href={profile.cvPdf}>CV</a>
+              </>
             )}
-          </ul>
+          </p>
         </div>
         {profile.photo && <img className="photo" src={profile.photo} alt={profile.name} />}
       </section>
 
       <section className="prose">
         <p>
-          I am a part-time <b>Ph.D. student in Computer Science at New Jersey Institute of Technology (NJIT)</b>,
-          advised by Prof. Xiaoning Ding. I am also a <b>Senior ML/AI Engineer at JPMorgan Chase</b> in New York.
-          Over 7+ years I have taken models from research into production at NVIDIA, CGMAX, Kaden Health and Saks.com.
+          I am a part-time Ph.D. student in Computer Science at the New Jersey Institute of Technology, advised by{" "}
+          {profile.advisor}. My research is on <b>reliable LLM systems</b>: how to share, protect, and evaluate large
+          language model services when many tenants, strict latency targets, and safety requirements compete for the
+          same capacity.
         </p>
-        <p>My research studies how LLM systems behave under real production constraints:</p>
-        <ul>
-          <li>
-            <b>Admission control for multi-tenant LLM gateways.</b> SLO-aware scheduling across tenants of managed LLM
-            APIs, and treating safety guardrail capacity as a budgeted, schedulable resource.
-          </li>
-          <li>
-            <b>Failure analysis for RAG.</b> Benchmarking retrieval-augmented generation with automated construction and
-            controllable failure injection (RAGFailBench).
-          </li>
-          <li>
-            <b>Evaluation methodology.</b> Measuring whether answers are <i>correct</i>, not just plausible: golden
-            datasets, behaviorally validated corpus mutation, and retrieval robustness.
-          </li>
+        <p>
+          My recent work studies <b>admission control for multi-tenant LLM gateways</b>, including SLO-aware scheduling
+          over managed, opaque model APIs and treating safety-guardrail capacity as a budgeted, schedulable resource. I
+          also build <b>benchmarks and evaluation methods for retrieval-augmented generation</b>, from controllable
+          failure injection (RAGFailBench) to behaviorally validated corpus mutation for measuring retrieval
+          robustness.
+        </p>
+        <p>
+          Alongside my Ph.D., I work as a Senior ML/AI Engineer at JPMorgan Chase in New York. Over 7+ years in industry
+          I have built and operated production ML and LLM systems, and those deployments are where my research questions
+          come from.
+        </p>
+        <p className="interests">
+          <span className="label">Research interests:</span> {profile.interests.join(" · ")}
+        </p>
+      </section>
+
+      <section>
+        <h2>News</h2>
+        <ul className="news">
+          {news.map((n) => (
+            <li key={n.date + n.text}>
+              <span className="news-date">[{formatMonth(n.date)}]</span>{" "}
+              <span dangerouslySetInnerHTML={{ __html: n.text }} />
+            </li>
+          ))}
         </ul>
-        <p>
-          Four of my papers have been accepted at <b>IEEE BigData 2026</b>, each with open-source code.
-        </p>
-        <p>
-          Before NJIT, I earned an M.S. in Analytics (Machine Learning &amp; NLP) from Harrisburg University and an M.S.
-          in Electrical &amp; Computer Engineering from the University of Alabama in Huntsville.
-        </p>
-        <p className="callout">
-          I am happy to talk about research collaborations on LLM systems, retrieval, or evaluation. Reach me at{" "}
-          <a href={`mailto:${profile.email}`}>{profile.email}</a>.
-        </p>
       </section>
 
       <section>
-        <h2>news</h2>
-        <table className="news">
-          <tbody>
-            {news.map((n) => (
-              <tr key={n.date + n.text}>
-                <th>{formatDate(n.date)}</th>
-                <td dangerouslySetInnerHTML={{ __html: n.text }} />
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </section>
-
-      <section>
-        <h2>selected publications</h2>
+        <h2>Publications</h2>
         <ol className="pubs">
           {selected.map((p) => (
             <PublicationItem key={p.id} p={p} />
           ))}
         </ol>
-        <p>
-          <Link href="/publications/">All publications →</Link>
-        </p>
+      </section>
+
+      <section>
+        <h2>Industry Experience</h2>
+        <ul className="timeline">
+          {experience.map((r) => (
+            <li key={r.org}>
+              <span className="tl-main">
+                <b>{r.org}</b>, {r.title}
+              </span>
+              <span className="tl-date">{r.period}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <ul className="timeline">
+          {education.map((e) => (
+            <li key={e.school}>
+              <span className="tl-main">
+                <b>{e.school}</b>, {e.degree}
+              </span>
+              <span className="tl-date">{e.period}</span>
+            </li>
+          ))}
+        </ul>
       </section>
     </>
   );

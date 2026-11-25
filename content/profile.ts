@@ -2,6 +2,18 @@ export const profile = {
   name: "Taixing Bi",
   headline: "AI/ML Researcher — LLM Systems, Retrieval & Evaluation",
   affiliation: "Ph.D. Student, Computer Science, NJIT",
+  position: "Ph.D. Student (part-time)",
+  department: "Department of Computer Science",
+  institution: "New Jersey Institute of Technology",
+  advisor: "Prof. Xiaoning Ding",
+  interests: [
+    "LLM serving systems",
+    "admission control & scheduling",
+    "multi-tenant LLM gateways",
+    "AI safety guardrails",
+    "retrieval-augmented generation",
+    "evaluation & robustness",
+  ],
   location: "New York, NY",
   email: "taixingbijob@gmail.com",
   // Set to "/cv.pdf" after putting the file at public/cv.pdf.

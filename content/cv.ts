@@ -64,7 +64,7 @@ export const experience: Role[] = [
 export const education = [
   {
     school: "New Jersey Institute of Technology (NJIT)",
-    degree: "Ph.D., Computer Science (part-time) — Advisor: Prof. Xiaoning Ding",
+    degree: "Ph.D. in Computer Science (part-time); advisor: Prof. Xiaoning Ding",
     period: "Fall 2026 – Present",
   },
   {

@@ -9,7 +9,7 @@ function Authors({ names: all }: { names: string[] }) {
       {names.map((n, i) => (
         <span key={n + i}>
           {i > 0 && (i === names.length - 1 ? (names.length > 2 ? ", and " : " and ") : ", ")}
-          {n === ME ? <strong>{n}</strong> : n}
+          {n === ME ? <span className="me">{n}</span> : n}
         </span>
       ))}
       {etAl && " et al."}
@@ -17,6 +17,7 @@ function Authors({ names: all }: { names: string[] }) {
   );
 }
 
+// Academic citation style: title / authors / venue / [PDF] [Code] [Abstract] [BibTeX]
 export function PublicationItem({ p }: { p: Publication }) {
   const links = [
     p.pdf && { label: "PDF", href: p.pdf },
@@ -27,7 +28,7 @@ export function PublicationItem({ p }: { p: Publication }) {
 
   return (
     <li className="pub">
-      <div className="pub-badge">{p.venueShort ?? p.year}</div>
+      <div className="pub-venue-tag">{p.venueShort ?? p.year}</div>
       <div className="pub-body">
         <div className="pub-title">{p.title}</div>
         <div className="pub-authors">
@@ -36,24 +37,24 @@ export function PublicationItem({ p }: { p: Publication }) {
         {(p.venue || p.status) && (
           <div className="pub-venue">
             {p.venue && <em>{p.venue}</em>}
-            {p.venue && p.status && " · "}
+            {p.venue && p.status && ", "}
             {p.status}
           </div>
         )}
-        <div className="pub-actions">
+        <div className="pub-links">
           {links.map((l) => (
-            <a key={l.label} className="chip" href={l.href} target="_blank" rel="noreferrer">
-              {l.label}
+            <a key={l.label} href={l.href} target="_blank" rel="noreferrer">
+              [{l.label}]
             </a>
           ))}
           {p.abstract && (
             <details>
-              <summary className="chip">Abstract</summary>
+              <summary>[Abstract]</summary>
               <p className="pub-abstract">{p.abstract}</p>
             </details>
           )}
           <details>
-            <summary className="chip">BibTeX</summary>
+            <summary>[BibTeX]</summary>
             <pre className="pub-bib">{toBibtex(p)}</pre>
           </details>
         </div>
