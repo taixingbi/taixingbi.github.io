@@ -7,12 +7,12 @@ export type Role = {
 };
 
 export const summary =
-  "Part-time Ph.D. student in Computer Science at NJIT and senior AI platform engineer with 7+ years of experience taking models from research into production systems. Research focus: admission control and guardrail capacity for multi-tenant LLM gateways, failure analysis for enterprise RAG, and evaluation methodology that measures whether answers are correct rather than merely plausible.";
+  "Part-time Ph.D. student in Computer Science at NJIT and Senior ML/AI Engineer at JPMorgan Chase, with 7+ years of experience taking models from research into production systems. Research focus: admission control and guardrail capacity for multi-tenant LLM gateways, failure analysis for enterprise RAG, and evaluation methodology that measures whether answers are correct rather than merely plausible.";
 
 export const experience: Role[] = [
   {
     org: "JPMorgan Chase & Co.",
-    title: "Senior AI Platform Engineer",
+    title: "Senior ML/AI Engineer",
     location: "New York, NY",
     period: "Oct 2026 – Present",
     bullets: [], // TODO

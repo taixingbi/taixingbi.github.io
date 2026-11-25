@@ -40,7 +40,7 @@ export default function Home() {
       <section className="prose">
         <p>
           I am a part-time <b>Ph.D. student in Computer Science at New Jersey Institute of Technology (NJIT)</b>,
-          advised by Prof. Xiaoning Ding. I am also a <b>Senior AI Platform Engineer at JPMorgan Chase</b> in New York.
+          advised by Prof. Xiaoning Ding. I am also a <b>Senior ML/AI Engineer at JPMorgan Chase</b> in New York.
           Over 7+ years I have taken models from research into production at NVIDIA, CGMAX, Kaden Health and Saks.com.
         </p>
         <p>My research studies how LLM systems behave under real production constraints:</p>

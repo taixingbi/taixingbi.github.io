@@ -6,7 +6,7 @@ export const news: { date: string; text: string }[] = [
   },
   {
     date: "2026-10-01",
-    text: "Joined <b>JPMorgan Chase</b> as a Senior AI Platform Engineer.",
+    text: "Joined <b>JPMorgan Chase</b> as a Senior ML/AI Engineer.",
   },
   {
     date: "2026-09-01", // TODO: exact start date
