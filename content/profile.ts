@@ -1,6 +1,7 @@
 export const profile = {
   name: "Taixing Bi",
   headline: "AI/ML Researcher — LLM Systems, Retrieval & Evaluation",
+  affiliation: "Ph.D. Student, Computer Science, NJIT",
   location: "New York, NY",
   email: "taixingbijob@gmail.com",
   // Set to "/cv.pdf" after putting the file at public/cv.pdf.

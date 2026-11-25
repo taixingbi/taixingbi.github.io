@@ -7,7 +7,7 @@ export type Role = {
 };
 
 export const summary =
-  "Applied AI researcher and senior engineer with 7+ years of experience taking models from research into production systems. Research focus: admission control and guardrail capacity for multi-tenant LLM gateways, failure analysis for enterprise RAG, and evaluation methodology that measures whether answers are correct rather than merely plausible.";
+  "Part-time Ph.D. student in Computer Science at NJIT and senior AI platform engineer with 7+ years of experience taking models from research into production systems. Research focus: admission control and guardrail capacity for multi-tenant LLM gateways, failure analysis for enterprise RAG, and evaluation methodology that measures whether answers are correct rather than merely plausible.";
 
 export const experience: Role[] = [
   {
@@ -73,6 +73,11 @@ export const experience: Role[] = [
 ];
 
 export const education = [
+  {
+    school: "New Jersey Institute of Technology (NJIT)",
+    degree: "Ph.D., Computer Science (part-time) — Advisor: Prof. Xiaoning Ding",
+    period: "Fall 2026 – Present",
+  },
   {
     school: "Harrisburg University of Science and Technology",
     degree: "M.S., Analytics (Machine Learning & NLP)",

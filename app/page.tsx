@@ -16,7 +16,9 @@ export default function Home() {
         <div>
           <h1>{profile.name}</h1>
           <p className="headline">{profile.headline}</p>
-          <p className="muted">{profile.location}</p>
+          <p className="muted">
+            {profile.affiliation} · {profile.location}
+          </p>
           <ul className="links">
             {profile.links.map((l) => (
               <li key={l.label}>
@@ -37,10 +39,11 @@ export default function Home() {
 
       <section className="prose">
         <p>
-          I am an applied AI researcher and <b>Senior AI Platform Engineer at JPMorgan Chase</b> in New York. Over 7+
-          years I have taken models from research into production at NVIDIA, CGMAX, Kaden Health and Saks.com. I am also
-          the founder and sole architect of <a href="https://taixingai.com">HuntAI</a>, an AI platform of 10+ services
-          that I built from scratch.
+          I am a part-time <b>Ph.D. student in Computer Science at New Jersey Institute of Technology (NJIT)</b>,
+          advised by Prof. Xiaoning Ding. I am also a <b>Senior AI Platform Engineer at JPMorgan Chase</b> in New York.
+          Over 7+ years I have taken models from research into production at NVIDIA, CGMAX, Kaden Health and Saks.com. I also
+          founded <a href="https://taixingai.com">HuntAI</a>, an AI platform of 10+ services that I designed and built
+          from scratch on my own.
         </p>
         <p>My research studies how LLM systems behave under real production constraints:</p>
         <ul>
@@ -61,12 +64,11 @@ export default function Home() {
           Four of my papers have been accepted at <b>IEEE BigData 2026</b>, each with open-source code.
         </p>
         <p>
-          I hold an M.S. in Analytics (Machine Learning &amp; NLP) from Harrisburg University and an M.S. in Electrical
-          &amp; Computer Engineering from the University of Alabama in Huntsville.
+          Before NJIT, I earned an M.S. in Analytics (Machine Learning &amp; NLP) from Harrisburg University and an M.S.
+          in Electrical &amp; Computer Engineering from the University of Alabama in Huntsville.
         </p>
         <p className="callout">
-          I am looking for a <b>part-time PhD</b> position in the NYC / NJ area, working on LLM systems, retrieval, or
-          evaluation. If you work on these problems, I&apos;d be glad to hear from you at{" "}
+          I am happy to talk about research collaborations on LLM systems, retrieval, or evaluation. Reach me at{" "}
           <a href={`mailto:${profile.email}`}>{profile.email}</a>.
         </p>
       </section>

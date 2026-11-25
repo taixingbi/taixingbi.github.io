@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://taixingbi.github.io"),
   title: { default: profile.name, template: `%s | ${profile.name}` },
   description:
-    "Taixing Bi — AI/ML researcher and senior engineer working on LLM systems, admission control for multi-tenant LLM gateways, enterprise RAG failure analysis, and evaluation.",
+    "Taixing Bi — part-time Ph.D. student in Computer Science at NJIT and senior AI platform engineer working on LLM systems, admission control for multi-tenant LLM gateways, enterprise RAG failure analysis, and evaluation.",
   keywords: [
     "LLM systems",
     "admission control",
