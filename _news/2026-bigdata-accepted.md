@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Four papers accepted at **IEEE BigData 2026**, covering LLM serving, admission control, and RAG robustness (including _RAGFailBench_). See [publications](/publications/). <!-- TODO: set the real acceptance date above -->
+Four papers accepted at **IEEE BigData 2026**, on admission control for multi-tenant LLM gateways and failure analysis and evaluation for enterprise RAG. See [publications](/publications/). <!-- TODO: set the real acceptance date above -->

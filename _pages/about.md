@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Senior AI Infrastructure Engineer · LLM Serving · Admission Control · RAG Robustness
+subtitle: AI/ML Researcher — LLM Systems, Retrieval & Evaluation
 
 profile:
   align: right
@@ -23,14 +23,16 @@ latest_posts:
   enabled: false
 ---
 
-I am a **Senior AI Infrastructure Engineer at JPMorgan Chase** in New York, where I build and operate production LLM systems. I hold an M.S. in Analytics (Machine Learning / NLP) from Harrisburg University and an M.S. in Computer Engineering from the University of Alabama in Huntsville.
+I am an applied AI researcher and **Senior AI Platform Engineer at JPMorgan Chase** in New York. Over 7+ years I have taken models from research into production at NVIDIA, CGMAX, Kaden Health and Saks.com. I am also the founder and sole architect of [HuntAI](https://taixingai.com), an AI platform of 10+ services that I built from scratch.
 
-My research sits where large-scale systems meet LLMs. I focus on three problems I also run into in production:
+My research studies how LLM systems behave under real production constraints:
 
-- **LLM serving.** Throughput, latency and caching for self-hosted inference engines such as vLLM and SGLang.
-- **Admission control.** Scheduling and load shedding for multi-tenant LLM workloads under SLO constraints.
-- **RAG robustness.** Characterizing and benchmarking how retrieval-augmented generation pipelines fail (e.g., _RAGFailBench_).
+- **Admission control for multi-tenant LLM gateways.** Scheduling requests under SLOs when the model API is managed and opaque, and treating guardrail capacity as a resource the gateway must schedule.
+- **Failure analysis for enterprise RAG.** Regression testing, failure-aware model selection, and attacks that reach the model through retrieved content.
+- **Evaluation methodology.** Measuring whether answers are _correct_, not just plausible: golden datasets, behaviorally validated corpus mutation, and retrieval robustness.
 
 Four of my papers have been accepted at **IEEE BigData 2026**.
 
-I am looking for a **part-time PhD** position in the NYC / NJ area, working on LLM systems, ML infrastructure, or trustworthy RAG. If you work on these problems, I'd be glad to hear from you.
+I hold an M.S. in Analytics (Machine Learning & NLP) from Harrisburg University and an M.S. in Electrical & Computer Engineering from the University of Alabama in Huntsville.
+
+I am looking for a **part-time PhD** position in the NYC / NJ area, working on LLM systems, retrieval, or evaluation. If you work on these problems, I'd be glad to hear from you.

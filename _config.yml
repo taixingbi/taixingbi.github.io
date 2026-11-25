@@ -9,11 +9,11 @@ last_name: Bi
 contact_note: >
   Email is the best way to reach me. I am currently looking for part-time PhD opportunities in the NYC / NJ area.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Taixing Bi — Senior AI Infrastructure Engineer working on LLM serving, admission control, and RAG robustness.
+  Taixing Bi — AI/ML researcher and senior engineer working on LLM systems, retrieval, and evaluation.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: LLM serving, admission control, RAG robustness, AI infrastructure, benchmark, IEEE BigData
+keywords: LLM systems, admission control, LLM gateways, guardrails, RAG, retrieval robustness, evaluation, IEEE BigData
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🧠
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.

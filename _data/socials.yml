@@ -1,8 +1,12 @@
 # Social / academic links shown as icons on the about page, in this order.
 # Plugin docs: https://github.com/george-gca/jekyll-socials
-cv_pdf: /assets/pdf/cv.pdf # drop your CV at assets/pdf/cv.pdf
-email: taixingbijob@gmail.com # TODO: confirm which email you want public
+# cv_pdf: /assets/pdf/cv.pdf # TODO: uncomment after adding assets/pdf/cv.pdf
+email: taixingbijob@gmail.com
 # scholar_userid: XXXXXXXXXXXX # TODO: Google Scholar ID (the "user=" part of your profile URL)
 # orcid_id: 0000-0000-0000-0000 # TODO: ORCID iD
 github_username: taixingbi
 linkedin_username: taixing-bi-757a4961
+website:
+  logo: fa-solid fa-globe
+  title: HuntAI (taixingai.com)
+  url: https://taixingai.com
