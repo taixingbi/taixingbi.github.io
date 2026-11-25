@@ -18,7 +18,7 @@ export const ME = "Taixing Bi";
 
 const BIGDATA = "IEEE International Conference on Big Data (BigData 2026)";
 
-// TODO for each paper: abstract, and pdf / arxiv / doi once available.
+// TODO for each paper: abstract, and arxiv / doi once available.
 export const publications: Publication[] = [
   {
     id: "bi2026ragfailbench",
@@ -28,6 +28,7 @@ export const publications: Publication[] = [
     venue: BIGDATA,
     venueShort: "BigData 2026",
     status: "Short Paper",
+    pdf: "https://github.com/taixingbi/RAGFailBench/blob/main/IEEE%20BigData2026%20-%20RAGFailBench.pdf",
     code: "https://github.com/taixingbi/RAGFailBench",
     selected: true,
   },
@@ -39,6 +40,7 @@ export const publications: Publication[] = [
     venue: BIGDATA,
     venueShort: "BigData 2026",
     status: "Regular Paper",
+    pdf: "https://github.com/taixingbi/corpus-mutation-retrieval-robustness/blob/main/IEEE%20BigData2026%20-%20Behaviorally%20Validated%20Corpus%20Mutation%20for%20Retrieval%20Robustness%20Evaluation.pdf",
     code: "https://github.com/taixingbi/corpus-mutation-retrieval-robustness",
     selected: true,
   },
@@ -50,6 +52,7 @@ export const publications: Publication[] = [
     venue: BIGDATA,
     venueShort: "BigData 2026",
     status: "Regular Paper",
+    pdf: "https://github.com/taixingbi/adaptive-LLM-gateway/blob/main/IEEE%20BigData2026%20-%20Adaptive%20SLO-Aware%20Admission%20Control%20for%20Multi-Tenant%20Managed%20LLM%20Gateways.pdf",
     code: "https://github.com/taixingbi/adaptive-LLM-gateway",
     selected: true,
   },
@@ -61,6 +64,7 @@ export const publications: Publication[] = [
     venue: BIGDATA,
     venueShort: "BigData 2026",
     status: "Special Session",
+    pdf: "https://github.com/taixingbi/guardrail-admission-control/blob/main/paper/psbd2026-safety-admission-control.pdf",
     code: "https://github.com/taixingbi/guardrail-admission-control",
     selected: true,
   },
