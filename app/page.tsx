@@ -45,12 +45,12 @@ export default function Home() {
         <p>My research studies how LLM systems behave under real production constraints:</p>
         <ul>
           <li>
-            <b>Admission control for multi-tenant LLM gateways.</b> Scheduling requests under SLOs when the model API is
-            managed and opaque, and treating guardrail capacity as a resource the gateway must schedule.
+            <b>Admission control for multi-tenant LLM gateways.</b> SLO-aware scheduling across tenants of managed LLM
+            APIs, and treating safety guardrail capacity as a budgeted, schedulable resource.
           </li>
           <li>
-            <b>Failure analysis for enterprise RAG.</b> Regression testing, failure-aware model selection, and attacks
-            that reach the model through retrieved content.
+            <b>Failure analysis for RAG.</b> Benchmarking retrieval-augmented generation with automated construction and
+            controllable failure injection (RAGFailBench).
           </li>
           <li>
             <b>Evaluation methodology.</b> Measuring whether answers are <i>correct</i>, not just plausible: golden
@@ -58,7 +58,7 @@ export default function Home() {
           </li>
         </ul>
         <p>
-          Four of my papers have been accepted at <b>IEEE BigData 2026</b>.
+          Four of my papers have been accepted at <b>IEEE BigData 2026</b>, each with open-source code.
         </p>
         <p>
           I hold an M.S. in Analytics (Machine Learning &amp; NLP) from Harrisburg University and an M.S. in Electrical

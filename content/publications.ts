@@ -16,42 +16,19 @@ export type Publication = {
 
 export const ME = "Taixing Bi";
 
-// TODO for each 2026 paper: co-authors, venue/status (mark the four IEEE BigData 2026 papers),
-// abstract, and pdf / arxiv / code links.
+const BIGDATA = "IEEE International Conference on Big Data (BigData 2026)";
+
+// TODO for each paper: co-authors (replace "others"), abstract, and pdf / arxiv / doi once available.
 export const publications: Publication[] = [
   {
     id: "bi2026ragfailbench",
-    title: "RAGFailBench: An Automated Regression Testing Framework for Enterprise RAG",
+    title: "RAGFailBench: Automated Construction and Controllable Failure-Injection Benchmarking for Retrieval-Augmented Generation",
     authors: [ME, "others"],
     year: 2026,
-    selected: true,
-  },
-  {
-    id: "bi2026adaptiveadmission",
-    title: "Adaptive SLO-Aware Admission Control for Multi-Tenant Managed LLM Gateways",
-    authors: [ME, "others"],
-    year: 2026,
-    selected: true,
-  },
-  {
-    id: "bi2026hierarchicaladmission",
-    title: "Hierarchical Admission Control for Opaque Multi-Tenant Managed LLM APIs",
-    authors: [ME, "others"],
-    year: 2026,
-    selected: true,
-  },
-  {
-    id: "bi2026guardrails",
-    title: "Guardrails Under Retrieval-Mediated Attacks",
-    authors: [ME, "others"],
-    year: 2026,
-    selected: true,
-  },
-  {
-    id: "bi2026failureaware",
-    title: "Failure-Aware Evaluation for Enterprise RAG Model Selection",
-    authors: [ME, "others"],
-    year: 2026,
+    venue: BIGDATA,
+    venueShort: "BigData 2026",
+    status: "Short Paper",
+    code: "https://github.com/taixingbi/RAGFailBench",
     selected: true,
   },
   {
@@ -59,14 +36,32 @@ export const publications: Publication[] = [
     title: "Behaviorally Validated Corpus Mutation for Retrieval Robustness Evaluation",
     authors: [ME, "others"],
     year: 2026,
+    venue: BIGDATA,
+    venueShort: "BigData 2026",
+    status: "Regular Paper",
+    code: "https://github.com/taixingbi/corpus-mutation-retrieval-robustness",
     selected: true,
   },
   {
-    id: "bi2012impedance",
-    title: "A Novel Approach to Impedance-based Fault Location for High Voltage Cables",
-    authors: [ME, "others"], // TODO: co-authors
-    year: 2012,
-    venue: "IEEE Industry Applications Society (IAS) Annual Meeting",
-    venueShort: "IEEE IAS",
+    id: "bi2026adaptiveadmission",
+    title: "Adaptive SLO-Aware Admission Control for Multi-Tenant Managed LLM Gateways",
+    authors: [ME, "others"],
+    year: 2026,
+    venue: BIGDATA,
+    venueShort: "BigData 2026",
+    status: "Regular Paper",
+    code: "https://github.com/taixingbi/adaptive-LLM-gateway",
+    selected: true,
+  },
+  {
+    id: "bi2026safetyschedulable",
+    title: "Safety as a Schedulable Resource: Budget-Aware Admission Control for Multi-Tenant LLM Gateways",
+    authors: [ME, "others"],
+    year: 2026,
+    venue: BIGDATA,
+    venueShort: "BigData 2026",
+    status: "Special Session",
+    code: "https://github.com/taixingbi/guardrail-admission-control",
+    selected: true,
   },
 ];
