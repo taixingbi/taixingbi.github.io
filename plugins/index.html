@@ -1,4 +1,4 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> plugins | Taixing Bi </title> <meta name="author" content="Taixing Bi"> <meta name="description" content="featured and bundled plugin ecosystem catalog for al-folio v1.x"> <meta name="keywords" content="LLM serving, admission control, RAG robustness, AI infrastructure, benchmark, IEEE BigData"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> plugins | Taixing Bi </title> <meta name="author" content="Taixing Bi"> <meta name="description" content="featured and bundled plugin ecosystem catalog for al-folio v1.x"> <meta name="keywords" content="LLM systems, admission control, LLM gateways, guardrails, RAG, retrieval robustness, evaluation, IEEE BigData"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
   :root {
     --max-content-width: 930px;
   }
@@ -31,25 +31,21 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Senior AI Infrastructure Engineer. Download the full PDF with the button on the right.",
+          description: "AI/ML Researcher — LLM Systems, Retrieval &amp; Evaluation",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "news-four-papers-accepted-at-ieee-bigdata-2026-covering-llm-serving-admission-control-and-rag-robustness-including-ragfailbench-see-publications",
-          title: 'Four papers accepted at IEEE BigData 2026, covering LLM serving, admission control, and...',
+        },{id: "news-joined-jpmorgan-chase-as-a-senior-ai-platform-engineer",
+          title: 'Joined JPMorgan Chase as a Senior AI Platform Engineer.',
+          description: "",
+          section: "News",},{id: "news-four-papers-accepted-at-ieee-bigdata-2026-on-admission-control-for-multi-tenant-llm-gateways-and-failure-analysis-and-evaluation-for-enterprise-rag-see-publications",
+          title: 'Four papers accepted at IEEE BigData 2026, on admission control for multi-tenant LLM...',
           description: "",
           section: "News",},{id: "news-i-am-looking-for-a-part-time-phd-position-in-the-nyc-nj-area-feel-free-to-reach-out",
           title: 'I am looking for a part-time PhD position in the NYC / NJ...',
           description: "",
           section: "News",},{
-        id: 'social-cv',
-        title: 'CV',
-        section: 'Socials',
-        handler: () => {
-          window.open("/assets/pdf/cv.pdf", "_blank");
-        },
-      },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
@@ -69,6 +65,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://www.linkedin.com/in/taixing-bi-757a4961", "_blank");
+        },
+      },{
+        id: 'social-website',
+        title: 'Website',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://taixingai.com", "_blank");
         },
       },{
       id: 'light-theme',
