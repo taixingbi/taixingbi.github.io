@@ -18,12 +18,12 @@ export const ME = "Taixing Bi";
 
 const BIGDATA = "IEEE International Conference on Big Data (BigData 2026)";
 
-// TODO for each paper: co-authors (replace "others"), abstract, and pdf / arxiv / doi once available.
+// TODO for each paper: abstract, and pdf / arxiv / doi once available.
 export const publications: Publication[] = [
   {
     id: "bi2026ragfailbench",
     title: "RAGFailBench: Automated Construction and Controllable Failure-Injection Benchmarking for Retrieval-Augmented Generation",
-    authors: [ME, "others"],
+    authors: [ME],
     year: 2026,
     venue: BIGDATA,
     venueShort: "BigData 2026",
@@ -34,7 +34,7 @@ export const publications: Publication[] = [
   {
     id: "bi2026corpusmutation",
     title: "Behaviorally Validated Corpus Mutation for Retrieval Robustness Evaluation",
-    authors: [ME, "others"],
+    authors: [ME],
     year: 2026,
     venue: BIGDATA,
     venueShort: "BigData 2026",
@@ -45,7 +45,7 @@ export const publications: Publication[] = [
   {
     id: "bi2026adaptiveadmission",
     title: "Adaptive SLO-Aware Admission Control for Multi-Tenant Managed LLM Gateways",
-    authors: [ME, "others"],
+    authors: [ME],
     year: 2026,
     venue: BIGDATA,
     venueShort: "BigData 2026",
@@ -56,7 +56,7 @@ export const publications: Publication[] = [
   {
     id: "bi2026safetyschedulable",
     title: "Safety as a Schedulable Resource: Budget-Aware Admission Control for Multi-Tenant LLM Gateways",
-    authors: [ME, "others"],
+    authors: [ME],
     year: 2026,
     venue: BIGDATA,
     venueShort: "BigData 2026",

@@ -12,7 +12,6 @@ export const profile = {
     { label: "Email", href: "mailto:taixingbijob@gmail.com" },
     { label: "GitHub", href: "https://github.com/taixingbi" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/taixing-bi-757a4961" },
-    { label: "HuntAI", href: "https://taixingai.com" },
     // TODO: { label: "Google Scholar", href: "https://scholar.google.com/citations?user=XXXX" },
     // TODO: { label: "ORCID", href: "https://orcid.org/0000-0000-0000-0000" },
   ],

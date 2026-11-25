@@ -41,9 +41,7 @@ export default function Home() {
         <p>
           I am a part-time <b>Ph.D. student in Computer Science at New Jersey Institute of Technology (NJIT)</b>,
           advised by Prof. Xiaoning Ding. I am also a <b>Senior AI Platform Engineer at JPMorgan Chase</b> in New York.
-          Over 7+ years I have taken models from research into production at NVIDIA, CGMAX, Kaden Health and Saks.com. I also
-          founded <a href="https://taixingai.com">HuntAI</a>, an AI platform of 10+ services that I designed and built
-          from scratch on my own.
+          Over 7+ years I have taken models from research into production at NVIDIA, CGMAX, Kaden Health and Saks.com.
         </p>
         <p>My research studies how LLM systems behave under real production constraints:</p>
         <ul>

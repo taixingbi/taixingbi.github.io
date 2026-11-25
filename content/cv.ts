@@ -18,17 +18,6 @@ export const experience: Role[] = [
     bullets: [], // TODO
   },
   {
-    org: "HuntAI — AI Platform (taixingai.com)",
-    title: "Founder & Architect",
-    location: "New York, NY",
-    bullets: [
-      "Founded and single-handedly built a 10+ service Kubernetes AI platform 0→1 — AI gateway, agent orchestration, retrieval, model serving, evaluation, monitoring, and GitOps delivery.",
-      "Designed a multi-agent orchestration engine from scratch (not built on LangChain/LangGraph), a control-plane architecture that makes each agent step observable and auditable.",
-      "Built automated evaluation (golden datasets, routing-accuracy tests, regression validation, quality monitoring); fine-tuned routing models (LoRA/SFT/DPO) only where benchmarks justified it.",
-      "Built the AI Gateway — multi-model routing, tool-execution controls bounding what agents may call, authentication, streaming responses, and per-request usage tracking.",
-    ],
-  },
-  {
     org: "Saks.com",
     title: "Senior AI Platform Engineer",
     location: "New York, NY",
